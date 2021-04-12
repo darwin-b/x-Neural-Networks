@@ -1,0 +1,22 @@
+Using 1 GPU(s)
+Epoch   0 Time    635.9 lr = 0.002000 avg loss = 0.016511 accuracy = 12.02
+Epoch   1 Time    633.4 lr = 0.041600 avg loss = 0.014228 accuracy = 22.26
+Epoch   2 Time    633.7 lr = 0.081200 avg loss = 0.012204 accuracy = 28.36
+Epoch   3 Time    633.5 lr = 0.120800 avg loss = 0.010963 accuracy = 32.52
+Epoch   4 Time    633.3 lr = 0.160400 avg loss = 0.010088 accuracy = 38.94
+Epoch   5 Time    632.2 lr = 0.200000 avg loss = 0.009439 accuracy = 40.02
+Epoch   6 Time    632.9 lr = 0.199795 avg loss = 0.008752 accuracy = 44.26
+Epoch   7 Time    633.2 lr = 0.199180 avg loss = 0.008298 accuracy = 46.10
+Epoch   8 Time    633.3 lr = 0.198158 avg loss = 0.007924 accuracy = 47.94
+Epoch   9 Time    636.3 lr = 0.196733 avg loss = 0.007598 accuracy = 52.64
+Epoch  10 Time    638.2 lr = 0.194911 avg loss = 0.007339 accuracy = 54.76
+Epoch  11 Time    636.6 lr = 0.192699 avg loss = 0.007106 accuracy = 56.62
+Epoch  12 Time    634.7 lr = 0.190107 avg loss = 0.006934 accuracy = 53.26
+Epoch  13 Time    633.6 lr = 0.187145 avg loss = 0.006780 accuracy = 53.70
+Epoch  14 Time    632.8 lr = 0.183825 avg loss = 0.006607 accuracy = 55.06
+Epoch  15 Time    632.7 lr = 0.180161 avg loss = 0.006446 accuracy = 54.74
+Epoch  16 Time    632.9 lr = 0.176168 avg loss = 0.006331 accuracy = 56.52
+Epoch  17 Time    632.6 lr = 0.171863 avg loss = 0.006184 accuracy = 56.22
+Epoch  18 Time    631.4 lr = 0.167263 avg loss = 0.006096 accuracy = 59.64
+Epoch  19 Time    632.5 lr = 0.162387 avg loss = 0.005964 accuracy = 58.20
+Epoch  20 Time    633.9 lr = 0.157254 avg loss = 0.005858 accuracy = 59.26
