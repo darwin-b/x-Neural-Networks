@@ -456,3 +456,12 @@ Epoch  34 Time     31.4 lr = 0.071676 avg loss = 0.004030
 Epoch  34 Time    403.8 lr = 0.071676 avg loss = 0.004031 accuracy = 68.86
 Epoch  35 Time     58.1 lr = 0.065598 avg loss = 0.003874
 Epoch  35 Time     31.5 lr = 0.065598 avg loss = 0.003895
+
+
+Random re-run stats:
+
+Using 1 GPU(s)
+Epoch   0 Time     50.7 lr = 0.002000 avg loss = 0.017960
+Epoch   0 Time     54.1 lr = 0.002000 avg loss = 0.017858
+Epoch   0 Time     55.0 lr = 0.002000 avg loss = 0.017732
+Epoch   0 Time     55.0 lr = 0.002000 avg loss = 0.017602
