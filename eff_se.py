@@ -398,27 +398,31 @@ class Model(nn.Module):
         self.enc_4 = nn.ModuleList()
         ne4 = 4*model_level_3_channels
             # Repeat 2 times
-        self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
-        self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
+        for n in range(model_level_4_blocks):
+            self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
+            # self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
+
         self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_4_channels,3,2))
 
         # encoder level 5 (80-160)
         self.enc_5 = nn.ModuleList()
         ne5 = 4*model_level_4_channels
             # Repeat 3 times
-        self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
-        self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
-        self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
+        for n in range(model_level_5_blocks):
+            self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
+            # self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
+            # self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
         self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_5_channels,3,2))
 
         # encoder level 6 (160-320)
         self.enc_6 = nn.ModuleList()
         ne6 = 4*model_level_5_channels
             # Repeat 4 times
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+        for n in range(model_level_6_blocks):
+            self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+            # self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+            # self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+            # self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
         self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_6_channels,3,2))
 
         # encoder level 7 (320-1280)
