@@ -11,8 +11,9 @@ Original file is located at
 #
 # LOGISTICS
 #
-#    <TO DO: first and last name as in eLearning>
-#    <TO DO: UTD ID>
+#    Name : Nikhil Darwin Bollepalli
+#    UTD ID : 2021548785
+#    Net ID : NXB200019
 #    <TO DO: this comment block is included in each file that is submitted:
 #    eff.py, eff_se.py (if done) and eff_se_cond.py (if done)>
 #
@@ -59,7 +60,62 @@ Original file is located at
 #       epoch statistics (for all networks trained: standard, SE enhanced and
 #       SE and conditional convolution enhanced)
 #
-#       <TO DO: cut and paste per epoch statistics here>
+#       Using 1 GPU(s)
+# Epoch   0 Time    372.6 lr = 0.002000 avg loss = 0.016492 accuracy = 11.42
+# Epoch   1 Time    371.4 lr = 0.041600 avg loss = 0.014386 accuracy = 21.76
+# Epoch   2 Time    371.6 lr = 0.081200 avg loss = 0.012312 accuracy = 27.72
+# Epoch   3 Time    372.1 lr = 0.120800 avg loss = 0.010926 accuracy = 33.18
+# Epoch   4 Time    369.9 lr = 0.160400 avg loss = 0.010022 accuracy = 36.96
+# Epoch   5 Time    368.1 lr = 0.200000 avg loss = 0.009387 accuracy = 42.26
+# Epoch   6 Time    367.8 lr = 0.199795 avg loss = 0.008718 accuracy = 44.80
+# Epoch   7 Time    367.2 lr = 0.199180 avg loss = 0.008228 accuracy = 42.88
+# Epoch   8 Time    369.6 lr = 0.198158 avg loss = 0.007870 accuracy = 49.44
+# Epoch   9 Time    371.6 lr = 0.196733 avg loss = 0.007578 accuracy = 51.80
+# Epoch  10 Time    370.8 lr = 0.194911 avg loss = 0.007316 accuracy = 49.36
+# Epoch  11 Time    370.4 lr = 0.192699 avg loss = 0.007089 accuracy = 54.32
+# Epoch  12 Time    368.3 lr = 0.190107 avg loss = 0.006901 accuracy = 55.62
+# Epoch  13 Time    366.7 lr = 0.187145 avg loss = 0.006747 accuracy = 54.24
+# Epoch  14 Time    366.1 lr = 0.183825 avg loss = 0.006571 accuracy = 55.92
+# Epoch  15 Time    365.7 lr = 0.180161 avg loss = 0.006419 accuracy = 58.14
+# Epoch  16 Time    366.4 lr = 0.176168 avg loss = 0.006316 accuracy = 60.32
+# Epoch  17 Time    366.9 lr = 0.171863 avg loss = 0.006190 accuracy = 60.66
+# Epoch  18 Time    365.9 lr = 0.167263 avg loss = 0.006040 accuracy = 59.88
+# Epoch  19 Time    365.2 lr = 0.162387 avg loss = 0.005930 accuracy = 62.44
+# Epoch  20 Time    364.8 lr = 0.157254 avg loss = 0.005848 accuracy = 56.64
+# Epoch  21 Time    363.8 lr = 0.151887 avg loss = 0.005756 accuracy = 58.38
+# Epoch  22 Time    363.9 lr = 0.146308 avg loss = 0.005635 accuracy = 62.72
+# Epoch  23 Time    364.2 lr = 0.140538 avg loss = 0.005545 accuracy = 63.94
+# Epoch  24 Time    364.0 lr = 0.134602 avg loss = 0.005430 accuracy = 61.74
+# Epoch  25 Time    364.0 lr = 0.128524 avg loss = 0.005346 accuracy = 65.00
+# Epoch  26 Time    364.6 lr = 0.122330 avg loss = 0.005256 accuracy = 63.78
+# Epoch  27 Time    365.5 lr = 0.116044 avg loss = 0.005156 accuracy = 63.80
+# Epoch  28 Time    364.5 lr = 0.109693 avg loss = 0.005053 accuracy = 64.36
+# Epoch  29 Time    365.1 lr = 0.103302 avg loss = 0.004952 accuracy = 64.64
+# Epoch  30 Time    366.0 lr = 0.096898 avg loss = 0.004860 accuracy = 65.34
+# Epoch  31 Time    367.2 lr = 0.090507 avg loss = 0.004746 accuracy = 66.04
+# Epoch  32 Time    366.8 lr = 0.084156 avg loss = 0.004648 accuracy = 67.04
+# Epoch  33 Time    367.2 lr = 0.077870 avg loss = 0.004560 accuracy = 64.96
+# Epoch  34 Time    366.6 lr = 0.071676 avg loss = 0.004465 accuracy = 65.20
+# Epoch  35 Time    368.5 lr = 0.065598 avg loss = 0.004338 accuracy = 67.06
+# Epoch  36 Time    370.2 lr = 0.059662 avg loss = 0.004252 accuracy = 67.80
+# Epoch  37 Time    370.9 lr = 0.053892 avg loss = 0.004145 accuracy = 65.28
+# Epoch  38 Time    368.8 lr = 0.048313 avg loss = 0.003987 accuracy = 67.50
+# Epoch  39 Time    366.7 lr = 0.042946 avg loss = 0.003907 accuracy = 69.88
+# Epoch  40 Time    367.1 lr = 0.037813 avg loss = 0.003780 accuracy = 70.14
+# Epoch  41 Time    366.7 lr = 0.032937 avg loss = 0.003665 accuracy = 70.34
+# Epoch  42 Time    366.6 lr = 0.028337 avg loss = 0.003567 accuracy = 70.52
+# Epoch  43 Time    366.7 lr = 0.024032 avg loss = 0.003479 accuracy = 70.58
+# Epoch  44 Time    368.7 lr = 0.020039 avg loss = 0.003360 accuracy = 70.56
+# Epoch  45 Time    369.1 lr = 0.016375 avg loss = 0.003256 accuracy = 70.90
+# Epoch  46 Time    369.8 lr = 0.013055 avg loss = 0.003167 accuracy = 71.80
+# Epoch  47 Time    369.3 lr = 0.010093 avg loss = 0.003093 accuracy = 71.20
+# Epoch  48 Time    367.7 lr = 0.007501 avg loss = 0.003029 accuracy = 72.30
+# Epoch  49 Time    367.1 lr = 0.005289 avg loss = 0.002953 accuracy = 72.64
+# Epoch  50 Time    367.3 lr = 0.003467 avg loss = 0.002935 accuracy = 72.34
+# Epoch  51 Time    366.7 lr = 0.002042 avg loss = 0.002890 accuracy = 72.60
+# Epoch  52 Time    365.8 lr = 0.001020 avg loss = 0.002871 accuracy = 72.40
+# Epoch  53 Time    365.8 lr = 0.000405 avg loss = 0.002857 accuracy = 72.54
+# Epoch  54 Time    367.2 lr = 0.000200 avg loss = 0.002847 accuracy = 72.36
 #
 #    3. Submit eff.py, eff_se.py (if done) and eff_se_cond.py (if done) via
 #       eLearning (no zip files, no Jupyter / iPython notebooks, ...) with this
@@ -294,6 +350,8 @@ class InvResBlock(nn.Module):
         res = self.relu1(res)
         res = self.conv2(res)
         res = self.bn2(res)
+
+
         res = self.relu2(res)
         res = self.conv3(res)
         res = self.bn3(res)
@@ -364,27 +422,31 @@ class Model(nn.Module):
         self.enc_4 = nn.ModuleList()
         ne4 = 4*model_level_3_channels
             # Repeat 2 times
-        self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
-        self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
+        for n in range(model_level_4_blocks):
+            self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
+            # self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_3_channels,3,1))
+
         self.enc_4.append(InvResBlock(model_level_3_channels, ne4, model_level_4_channels,3,2))
 
         # encoder level 5 (80-160)
         self.enc_5 = nn.ModuleList()
         ne5 = 4*model_level_4_channels
             # Repeat 3 times
-        self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
-        self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
-        self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
+        for n in range(model_level_5_blocks):
+            self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
+            # self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
+            # self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_4_channels,3,1))
         self.enc_5.append(InvResBlock(model_level_4_channels, ne5, model_level_5_channels,3,2))
 
         # encoder level 6 (160-320)
         self.enc_6 = nn.ModuleList()
         ne6 = 4*model_level_5_channels
             # Repeat 4 times
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
-        self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+        for n in range(model_level_6_blocks):
+            self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+            # self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+            # self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
+            # self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_5_channels,3,1))
         self.enc_6.append(InvResBlock(model_level_5_channels, ne6, model_level_6_channels,3,2))
 
         # encoder level 7 (320-1280)
@@ -557,7 +619,7 @@ for epoch in range(start_epoch, TRAIN_NUM_EPOCHS):
             num_display          = 0
             elapsed_time_display = time.time() - start_time_display
             start_time_display   = time.time()
-            print('Epoch {0:3d} Time {1:8.1f} lr = {2:8.6f} avg loss = {3:8.6f}'.format(epoch, elapsed_time_display, lr_schedule(epoch), (training_loss / num_batches) / DATA_BATCH_SIZE), flush=True)
+            # print('Epoch {0:3d} Time {1:8.1f} lr = {2:8.6f} avg loss = {3:8.6f}'.format(epoch, elapsed_time_display, lr_schedule(epoch), (training_loss / num_batches) / DATA_BATCH_SIZE), flush=True)
 
     # initialize epoch testing
     model.eval()
