@@ -11,19 +11,16 @@ Original file is located at
 #
 # LOGISTICS
 #
-#    NAME: Nikhil Darwin Bollepalli
-#    ID:   NXB200019
+#    Written By : Nikhil Darwin Bollepalli
 #    
 #
 # FILE
 #
 #    nn.py
 #
+#
 # DESCRIPTION
 #
-#    Grade = nn.py grade (max 80) + sw.py grade (max 20) + cnn.py grade (max 20)
-#
-#    This file is required; see above for grade calculation
 #
 #    This is the start of an exceedingly simple / lite / reduced functionality
 #    PyTorch style xNN library written in Python and it's example use for MNIST
@@ -58,14 +55,8 @@ Original file is located at
 #       Softmax                        1x10
 #       Cross entropy                  1
 #
-# INSTRUCTIONS
+#     output generated during training; showing the per epoch statistics
 #
-#    1. Complete all <TO DO: ...> code portions of this file
-#
-#    2. Cut and paste the text output generated during training showing the per
-#       epoch statistics
-#
-#       
   # Epoch   0 Time     32.0 lr = 0.000100 avg loss = 1.114983 accuracy = 86.70
   # Epoch   1 Time     32.1 lr = 0.003400 avg loss = 0.226087 accuracy = 95.40
   # Epoch   2 Time     32.0 lr = 0.006700 avg loss = 0.130239 accuracy = 96.12
@@ -80,9 +71,6 @@ Original file is located at
   # Epoch  11 Time     32.0 lr = 0.000311 avg loss = 0.004485 accuracy = 98.29
   # Epoch  12 Time     31.9 lr = 0.000010 avg loss = 0.004097 accuracy = 98.28
 #
-#    3. Submit nn.py via eLearning (no zip files, no Jupyter / iPython
-#       notebooks, ...) with this comment block at the top and all code from
-#       the IMPORT comment block to the end
 #
 ################################################################################
 
@@ -146,24 +134,6 @@ DISPLAY_COL_IN = 10
 DISPLAY_ROW_IN = 25
 DISPLAY_NUM    = DISPLAY_ROWS*DISPLAY_COLS
 
-# x=np.random.standard_normal((10,3)).astype(np.float32)
-# x0 = np.ones(3)
-# w1 = np.random.standard_normal((3,5)).astype(np.float32)
-# print(x0,x0.shape)
-# print(w1,w1.shape)
-# print()
-# x1 = x0.dot(w1)
-# print(x1) # x0*W
-# print()
-
-# w2 = np.zeros(5)
-# print(w2) 
-# x2 = x1+w2
-# print(x2) # x0W + w2
-# print(np.maximum(0,x2)) #eliminating -ve values
-# print()
-
-# print(w1.resize(15,1))
 
 ################################################################################
 #
@@ -247,30 +217,21 @@ class DataLoader:
 
     # save images x, labels y and data normalization factor x_norm
     def __init__(self, x, y, x_norm):
-        # <TO DO: your code goes here>
         self.x = x
         self.y = y
         self.x_norm = x/DATA_NORM
 
     # return normalized image t and label t
     def get(self, t):
-        # <TO DO: your code goes here>
         return np.reshape(self.x_norm[t, :, :, :], 784), self.y[t]
 
     # return the total number of images
     def num(self):
-        # <TO DO: your code goes here>
         return self.x.shape[0]
 # data loaders
 data_loader_train = DataLoader(train_data, train_labels, DATA_NORM)
 data_loader_test  = DataLoader(test_data,  test_labels,  DATA_NORM)
 
-# x= data_loader_train.get(2)
-# # print(x)
-# data_loader_test.num()
-
-# x = np.zeros(10).shape
-# print(train_labels.shape)
 
 ################################################################################
 #
@@ -303,7 +264,6 @@ class VectorMatrixMultiplication:
     # compute and save the parameter gradient de/dh and return the input gradient de/dx = de/dy * dy/dx
     def backward(self, dedy):
 
-        # <TO DO: your code goes here>
         self.dedw1 = np.outer(self.x,dedy)
         # self.dedw1 =   ?
         # print(((self.w1).T).shape)
@@ -329,7 +289,6 @@ class VectorVectorAddition:
     # compute and save the parameter gradient de/dh and return the input gradient de/dx = de/dy * dy/dx
     def backward(self, dedy):
         
-        # <TO DO: your code goes here>
         self.dedw2 = dedy
         return dedy
 
@@ -347,7 +306,6 @@ class ReLU:
 
     # return the input gradient de/dx = de/dy * dy/dx
     def backward(self, dedy):
-        # <TO DO: your code goes here>
         return np.minimum(np.float32(1.0), np.ceil(np.maximum(np.float32(0.0), self.x)))*dedy
 
 # soft max cross entropy layer
@@ -355,13 +313,11 @@ class SoftMaxCrossEntropy:
 
     # initialize probability p and label
     def __init__(self, y_channels):
-        # <TO DO: your code goes here>
         self.p = np.zeros(y_channels, dtype=np.float32)
         self.label = -1
     
     # save the label, compute and save the probability p and return e = f(label, y)
     def forward(self, label, y):  # expecting y to be np.exp(x8 )  x8 --> final output
-        # <TO DO: your code goes here>
         self.label = label 
         self.p = np.exp(y)/np.sum(np.exp(y))
         loss = -np.log(self.p[label]) 
@@ -370,8 +326,6 @@ class SoftMaxCrossEntropy:
 
     # compute and return the input gradient de/dx from the saved probability and label; e is not used
     def backward(self, e):
-        
-        # <TO DO: your code goes here>
         self.p[label] = self.p[label] - np.float32(1.0) 
         return self.p  # equivalent of dedx8
 
@@ -386,7 +340,6 @@ class Network:
 
     # save the network description parameters and create all layers
     def __init__(self, rows, cols, n0, n1, n2, n3):
-        # <TO DO: your code goes here>
         self.rows =rows
         self.cols =cols
         self.n0 =n0  #784
@@ -407,10 +360,9 @@ class Network:
         
 
 
-    # connect layers forward functions together to map the input image to the network output
+    # connectimg layers forward functions together to map the input image to the network output
     # return the network output
     def forward(self, img):
-        # <TO DO: your code goes here>
         # img = 28*28 & probably use vectormulti, vectvet addition & relu classes
 
         x0 = img 
@@ -422,11 +374,10 @@ class Network:
         return i3
 
 
-    # connect layers backward functions together to map de/dy at the end of the network to de/dx at the beginning
+    # connecting layers backward functions together to map de/dy at the end of the network to de/dx at the beginning
     # note that inside the backward functions de/dh is computed for all parameters
     # optionally return de/dx (unused)
     def backward(self, dedy):
-        # <TO DO: your code goes here>
         a1=self.va3.backward(dedy)
         # print(a1.shape)
 
@@ -448,7 +399,6 @@ class Network:
 
     # update all layers with trainable parameters via h = h - lr * de/dh
     def update(self, lr):
-        # <TO DO: your code goes here>
         self.vm1.w1 -= lr*(self.vm1.dedw1)
         self.va1.w2 -= lr*(self.va1.dedw2)
 
@@ -605,24 +555,4 @@ for t in range(DISPLAY_NUM):
 # show figures
 plt.show()
 
-# # checking by value & reference.
 
-# def set_list(list): 
-#     list = ["A", "B", "C"] 
-#     return list
-  
-# def add(list): 
-#     list.append("D") 
-#     return list
-  
-# my_list = ["E"] 
-  
-# print(set_list(my_list)) 
-# print(my_list)
-# print(add(my_list)) 
-# print(my_list)
-
-# t=np.ones(9)
-# t.resize(3,3)
-
-# print(t)
