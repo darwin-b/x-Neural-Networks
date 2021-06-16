@@ -1,6 +1,6 @@
 # x-Neural-Networks
 
-# Note  
+#### Note  
     [Runtime - Change runtime type - Hardware accelerator - GPU]
       - If experiencing memory issues on google colab switch to Kaggle notebook and use gpu as accelerator.
 #### FILE
@@ -55,6 +55,7 @@
 
 #### FILES
 >   eff.py 
+
 >   IR-Net_NetworksPaper.pdf
 
 #### DESCRIPTION
@@ -127,6 +128,7 @@
 
 #### FILES
 >   eff_se.py
+
 >   IR-Net_NetworksPaper.pdf
 
 #### DESCRIPTION
